@@ -2,7 +2,7 @@ import React from "react";
 import { Layout } from "antd";
 import HeaderBanner from "../components/HeaderBanner";
 import QuickLinks from "../components/QuickLinks";
-// import DevelopmentSectors from '../components/DevelopmentSectors';
+import DevelopmentSectors from '../components/DevelopmentSectors';
 // import ContactWDC from "@/components/ContactWDC";
 
 const { Content, Footer } = Layout;
@@ -15,7 +15,7 @@ const Home = () => {
 
       { <Content style={{ padding: "20px" }}>
         <QuickLinks />
-        {/* <DevelopmentSectors /> */}
+         <DevelopmentSectors /> 
         {/* <ContactWDC /> */}
       </Content> }
 

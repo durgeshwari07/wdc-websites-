@@ -1,121 +1,72 @@
-/* Filename: app/components/DevelopmentSectors.module.css *
-
-.sectorsContainer {
-  padding: 60px 0; /* Adjusted padding for full-width effect *
-  background-color: #fff;
-  overflow: hidden; /* Hide anything that goes outside *
+.wrapper {
+  padding: 48px 0;
+  background: #f9fafb;
 }
 
-.sectionTitle {
-  text-align: center;
-  margin-bottom: 50px !important;
-  color: #333;
-  font-weight: 600 !important;
+.container {
+  width: 92%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.marquee {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 24px; /* Space between the two rows *
+.title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #0f172a;
 }
 
-/* Fading effect on the edges *
-.marquee::before,
-.marquee::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 150px; /* Width of the fade *
-  height: 100%;
-  z-index: 2;
-}
-
-.marquee::before {
-  left: 0;
-  background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-}
-
-.marquee::after {
-  right: 0;
-  background: linear-gradient(to left, #fff, rgba(255, 255, 255, 0));
-}
-
-.marqueeTrack {
+/* Horizontal scrolling row */
+.scrollRow {
   display: flex;
-  flex-shrink: 0;
-  gap: 24px; /* Space between cards *
-  justify-content: space-around;
-  min-width: 100%;
+  gap: 18px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
 }
 
-/* Pause animation on hover *
-.marquee:hover .marqueeTrack {
-  animation-play-state: paused;
+.scrollRow::-webkit-scrollbar {
+  height: 8px;
 }
 
-.scrollLeft {
-  animation: scrollLeft 30s linear infinite;
+.scrollRow::-webkit-scrollbar-track {
+  background: transparent;
 }
 
-.scrollRight {
-  animation: scrollRight 40s linear infinite; /* Slower for more items *
+.scrollRow::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
 }
 
-@keyframes scrollLeft {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    /* Move by half the width of the track *
-    transform: translateX(calc(-50% - 12px)); /* 12px is half the gap *
-  }
-}
-
-@keyframes scrollRight {
-  from {
-    transform: translateX(calc(-50% - 12px));
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-.sectorCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  cursor: pointer;
-  padding: 10px;
-  width: 200px; /* Give cards a fixed width *
-  flex-shrink: 0;
-}
-
-.iconWrapper {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+/* Sector card */
+.card {
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: #f0f5ff;
-  margin-bottom: 15px;
-  font-size: 36px;
-  color: #2f54eb;
-  box-shadow: 0 4px 15px rgba(47, 84, 235, 0.1);
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  gap: 14px;
+  padding: 20px 22px; /* bigger */
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  min-width: 240px; /* a bit wider */
 }
 
-.sectorCard:hover .iconWrapper {
-  background-color: #2f54eb;
-  color: #fff;
-  box-shadow: 0 8px 20px rgba(47, 84, 235, 0.3);
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
 }
 
-.sectorName {
-  font-size: 14px;
-  color: #555;
-  font-weight: 500;
-  height: 40px;
+.icon {
+  font-size: 2rem;        /* bigger */
+  color: #16a34a;         /* green */
+}
+
+.cardTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
 }
