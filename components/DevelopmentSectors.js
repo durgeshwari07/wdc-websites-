@@ -32,10 +32,13 @@ export default function DevelopmentSectors() {
   return (
     <section className={styles.wrapper} aria-labelledby="dev-sectors-title">
       <div className={styles.container}>
-        <h2 id="dev-sectors-title" className={styles.title}>
-          Development Sectors
-        </h2>
+        {/* Title with background + underline */}
+        <h2 id="dev-sectors-title" className={styles.sectionTitle}>
+           <span className={styles.underline}>Development</span> Sectors
+           </h2>
+           <div className={styles.underline}></div>
 
+        {/* Horizontal scroll row */}
         <div className={styles.scrollRow}>
           {sectors.map((s) => (
             <Link key={s.title} href={s.href} className={styles.card}>

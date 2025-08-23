@@ -9,12 +9,24 @@
   margin: 0 auto;
 }
 
-.title {
-  font-size: 1.8rem;
-  font-weight: 800;
-  margin-bottom: 20px;
-  color: #0f172a;
+
+.sectionTitle {
+  font-size: 30px;                /* same size as Quick Links */
+  font-weight: 850;
+  color: #111;                    /* dark text */
+  margin-bottom: 6px;
+  display: inline-block;
 }
+
+.underline {
+  border-bottom: 3px solid #16a34a; /* green underline */
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+
+
+
 
 /* Horizontal scrolling row */
 .scrollRow {
