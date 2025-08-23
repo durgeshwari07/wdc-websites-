@@ -1,0 +1,131 @@
+/* Filename: components/HeroBanner.module.css */
+
+.heroContainer {
+  position: relative;
+  height: 100vh; /* Full screen height */
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column; /* Stack main content and bottom bar */
+  justify-content: center; /* Center content vertically */
+  padding: 80px;
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  z-index: 1;
+}
+
+/* New wrapper for left/right content */
+.mainContentWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 100px; /* Added margin to push buttons down */
+}
+
+/* Left-side content */
+.content {
+  max-width: 600px;
+}
+
+/* Right-side logo */
+.logoContainer {
+  padding-left: 40px;
+}
+
+.heroLogo {
+  width: 120px; /* Made logo slightly larger */
+}
+
+.preTitle {
+  color: #eee;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 8px !important;
+}
+
+.mainTitle {
+  color: #fff !important;
+  font-size: 3.5rem !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bottomBar {
+  position: absolute;
+  bottom: 40px; /* Positioned from bottom */
+  left: 80px; /* Aligned with padding */
+  width: auto;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-start; /* Moves the buttons to the left */
+}
+
+.heroButton,
+.heroButtonSecondary {
+  height: auto !important;
+  padding: 12px 28px !important;
+  font-weight: 600 !important;
+  border-radius: 4px !important;
+  transition: all 0.3s ease;
+  border: 2px solid #c9a877 !important;
+}
+
+.heroButton {
+  background-color: #c9a877 !important;
+  color: #fff !important; /* White text */
+}
+
+.heroButton:hover {
+  background-color: #b3915f !important;
+  border-color: #b3915f !important;
+}
+
+.heroButtonSecondary {
+  background-color: transparent !important;
+  color: #fff !important; /* White text */
+}
+
+.heroButtonSecondary:hover {
+  background-color: #c9a877 !important;
+  color: #fff !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .heroContainer {
+    padding: 40px 20px;
+  }
+  .mainContentWrapper {
+    flex-direction: column; /* Stack logo on top of text on mobile */
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .logoContainer {
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+  .mainTitle {
+    font-size: 2.5rem !important;
+  }
+  .bottomBar {
+    position: relative; /* Changed position for mobile */
+    bottom: auto;
+    left: auto;
+    padding: 20px 0;
+    width: 100%;
+    justify-content: center;
+  }
+}

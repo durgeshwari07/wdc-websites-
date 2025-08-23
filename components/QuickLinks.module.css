@@ -1,0 +1,125 @@
+/* .section {
+  padding: 40px 15px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.heading {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  padding: 20px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: #00a651;
+}
+
+/* 🔥 Active (clicked) state *
+.card.active {
+  background: #00a651;
+  color: white;
+  border-color: #00a651;
+}
+
+.card.active p {
+  color: white;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+} */
+
+
+
+/* Filename: app/components/QuickLinks.module.css */
+
+.quickLinksContainer {
+  padding: 60px 20px;
+  background-color: #f4f7f6;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 40px !important;
+  color: #333;
+  font-weight: 600 !important;
+}
+
+.cardWrapper {
+  background-color: #fff;
+  text-align: center;
+  padding: 25px 15px; /* Reduced padding */
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+/* This is the hover effect */
+.cardWrapper:hover {
+  transform: translateY(-10px);
+  background-color: #2ecc71; /* Lighter green background on hover */
+  box-shadow: 0 10px 25px rgba(46, 204, 113, 0.3); /* Lighter green shadow */
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 36px; /* Reduced icon size */
+  color: #2ecc71; /* Lighter green icon color */
+  margin-bottom: 15px; /* Adjusted margin */
+  transition: color 0.3s ease;
+}
+
+.cardWrapper:hover .icon {
+  color: #fff; /* Icon turns white on hover */
+}
+
+.cardTitle {
+  color: #333;
+  font-weight: 600 !important;
+  margin-bottom: 5px !important; /* Adjusted margin */
+  font-size: 1rem !important; /* Reduced font size */
+  transition: color 0.3s ease;
+}
+
+.cardWrapper:hover .cardTitle {
+  color: #fff; /* Title turns white on hover */
+}
+
+.cardSubtitle {
+  color: #777;
+  font-size: 12px; /* Reduced font size */
+  transition: color 0.3s ease;
+}
+
+.cardWrapper:hover .cardSubtitle {
+  color: #ecf0f1; /* Subtitle turns light gray on hover */
+}

@@ -1,0 +1,121 @@
+/* Filename: app/components/DevelopmentSectors.module.css *
+
+.sectorsContainer {
+  padding: 60px 0; /* Adjusted padding for full-width effect *
+  background-color: #fff;
+  overflow: hidden; /* Hide anything that goes outside *
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 50px !important;
+  color: #333;
+  font-weight: 600 !important;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 24px; /* Space between the two rows *
+}
+
+/* Fading effect on the edges *
+.marquee::before,
+.marquee::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 150px; /* Width of the fade *
+  height: 100%;
+  z-index: 2;
+}
+
+.marquee::before {
+  left: 0;
+  background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+}
+
+.marquee::after {
+  right: 0;
+  background: linear-gradient(to left, #fff, rgba(255, 255, 255, 0));
+}
+
+.marqueeTrack {
+  display: flex;
+  flex-shrink: 0;
+  gap: 24px; /* Space between cards *
+  justify-content: space-around;
+  min-width: 100%;
+}
+
+/* Pause animation on hover *
+.marquee:hover .marqueeTrack {
+  animation-play-state: paused;
+}
+
+.scrollLeft {
+  animation: scrollLeft 30s linear infinite;
+}
+
+.scrollRight {
+  animation: scrollRight 40s linear infinite; /* Slower for more items *
+}
+
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    /* Move by half the width of the track *
+    transform: translateX(calc(-50% - 12px)); /* 12px is half the gap *
+  }
+}
+
+@keyframes scrollRight {
+  from {
+    transform: translateX(calc(-50% - 12px));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.sectorCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  width: 200px; /* Give cards a fixed width *
+  flex-shrink: 0;
+}
+
+.iconWrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f5ff;
+  margin-bottom: 15px;
+  font-size: 36px;
+  color: #2f54eb;
+  box-shadow: 0 4px 15px rgba(47, 84, 235, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sectorCard:hover .iconWrapper {
+  background-color: #2f54eb;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(47, 84, 235, 0.3);
+}
+
+.sectorName {
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+  height: 40px;
+}
