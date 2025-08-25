@@ -4,28 +4,27 @@ import HeaderBanner from "../components/HeaderBanner";
 import AboutUs from "../components/AboutUs";
 import QuickLinks from "../components/QuickLinks";
 import DevelopmentSectors from "../components/DevelopmentSectors";
-// import ContactWDC from "@/components/ContactWDC";
+import FooterSection from "../components/FooterSection";
 
-const { Content, Footer } = Layout;
+const { Content } = Layout;
 
 export default function Home() {
   return (
     <Layout>
-      {/* Header Section */}
+      {/* ✅ Header Section */}
       <HeaderBanner />
 
-      {/* Main Content */}
+      {/* ✅ Main Content */}
       <Content style={{ padding: "20px" }}>
         <AboutUs />
         <QuickLinks />
         <DevelopmentSectors />
-        {/* <ContactWDC /> */}
+        <CommitteeMembers />
+        {/* If needed later: <ContactWDC /> */}
       </Content>
 
-      {/* Footer */}
-      <Footer style={{ textAlign: "center" }}>
-        Ward Development Committee ©2025 | Powered by React + Next.js + Ant Design
-      </Footer>
+      {/* ✅ Custom Footer Section */}
+      <FooterSection />
     </Layout>
   );
 }
