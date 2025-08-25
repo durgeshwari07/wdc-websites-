@@ -4,7 +4,7 @@
 import React from 'react';
 import { Button, Space, Typography, Image } from 'antd';
 import { ArrowRightOutlined } from '@ant-design/icons';
-import styles from './HeaderBanner.module.css';
+import styles from '../styles/HeaderBanner.module.css';
 
 const { Title, Paragraph } = Typography;
 

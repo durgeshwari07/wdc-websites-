@@ -1,7 +1,7 @@
 import { Row, Col, Typography, Button } from "antd";
 import { TeamOutlined } from "@ant-design/icons";
 import { useRouter } from "next/router";
-import styles from "@/styles/AboutUs.module.css";
+import styles from "../styles/AboutUs.module.css";
 
 const { Title, Paragraph } = Typography;
 

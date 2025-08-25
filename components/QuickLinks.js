@@ -10,7 +10,7 @@ import {
   NodeIndexOutlined,
   AppstoreOutlined
 } from '@ant-design/icons';
-import styles from './QuickLinks.module.css';
+import styles from '../styles/QuickLinks.module.css';
 
 const { Title, Text } = Typography;
 

@@ -14,7 +14,7 @@ import {
   SafetyCertificateOutlined,
 } from '@ant-design/icons';
 
-import styles from './DevelopmentSectors.module.css';
+import styles from '../styles/DevelopmentSectors.module.css';
 
 const sectors = [
   { title: 'Agriculture & Allied', icon: <CloudOutlined />, href: '/sectors/agriculture' },

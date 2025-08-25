@@ -4,7 +4,9 @@ import HeaderBanner from "../components/HeaderBanner";
 import AboutUs from "../components/AboutUs";
 import QuickLinks from "../components/QuickLinks";
 import DevelopmentSectors from "../components/DevelopmentSectors";
+import CommitteeMembers from "../components/CommitteeMembers";
 import FooterSection from "../components/FooterSection";
+
 
 const { Content } = Layout;
 

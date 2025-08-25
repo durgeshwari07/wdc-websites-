@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Row, Col, Typography, Button, Avatar, Tag } from "antd";
 import { UserOutlined, WomanOutlined, TeamOutlined } from "@ant-design/icons";
-import styles from "@/styles/CommitteeMembers.module.css";
+import styles from "../styles/CommitteeMembers.module.css";
 
 const { Title, Text } = Typography;
 
