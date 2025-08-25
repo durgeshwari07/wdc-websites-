@@ -1,29 +1,30 @@
 import React from "react";
 import { Layout } from "antd";
 import HeaderBanner from "../components/HeaderBanner";
+import AboutUs from "../components/AboutUs";
 import QuickLinks from "../components/QuickLinks";
-import DevelopmentSectors from '../components/DevelopmentSectors';
-// import ContactWDC from "@/components/ContactWDC";
+import DevelopmentSectors from "../components/DevelopmentSectors";
+import FooterSection from "../components/FooterSection";
 
-const { Content, Footer } = Layout;
+const { Content } = Layout;
 
-const Home = () => {
+export default function Home() {
   return (
     <Layout>
+      {/* ✅ Header Section */}
       <HeaderBanner />
-      
 
-      { <Content style={{ padding: "20px" }}>
+      {/* ✅ Main Content */}
+      <Content style={{ padding: "20px" }}>
+        <AboutUs />
         <QuickLinks />
-         <DevelopmentSectors /> 
-        {/* <ContactWDC /> */}
-      </Content> }
+        <DevelopmentSectors />
+        <CommitteeMembers />
+        {/* If needed later: <ContactWDC /> */}
+      </Content>
 
-      <Footer style={{ textAlign: "center" }}>
-        Ward Development Committee ©2025 | Powered by React + Next.js + Ant Design
-      </Footer>
+      {/* ✅ Custom Footer Section */}
+      <FooterSection />
     </Layout>
   );
-};
-
-export default Home;
+}

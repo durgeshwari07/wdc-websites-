@@ -1,0 +1,21 @@
+.membersSection {
+  padding: 60px 20px;
+  background: #f9fbfd;
+}
+
+.memberCard {
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.memberCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+  margin-bottom: 15px;
+  background-color: #1677ff;
+}
