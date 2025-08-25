@@ -11,22 +11,18 @@
 
 
 .sectionTitle {
-  font-size: 30px;                /* same size as Quick Links */
+  font-size: 30px;                
   font-weight: 850;
-  color: #111;                    /* dark text */
+  color: #111;                    
   margin-bottom: 6px;
   display: inline-block;
 }
 
 .underline {
-  border-bottom: 3px solid #16a34a; /* green underline */
+  border-bottom: 3px solid #16a34a; 
   display: inline-block;
   padding-bottom: 2px;
 }
-
-
-
-
 
 /* Horizontal scrolling row */
 .scrollRow {
@@ -73,8 +69,8 @@
 }
 
 .icon {
-  font-size: 2rem;        /* bigger */
-  color: #16a34a;         /* green */
+  font-size: 2rem;        
+  color: #16a34a;         
 }
 
 .cardTitle {
