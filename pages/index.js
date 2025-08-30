@@ -15,28 +15,19 @@ const { Content } = Layout;
 export default function Home() {
   return (
     <>
-      {/* ✅ Page Head */}
       <Head>
         <title>Ward Development Committee</title>
       </Head>
 
-      {/* ✅ Page Layout */}
       <Layout>
-        {/* ✅ Header Section */}
         <HeaderBanner />
-
-        {/* ✅ Main Content */}
         <Content style={{ padding: "20px" }}>
           <AboutUs />
           <QuickLinks />
           <DevelopmentSectors />
           <CommitteeMembers />
-          {/* ✨ New Section */}
           <CitizenParticipation />
-          {/* If needed later: <ContactWDC /> */}
         </Content>
-
-        {/* ✅ Footer */}
         <FooterSection />
       </Layout>
     </>

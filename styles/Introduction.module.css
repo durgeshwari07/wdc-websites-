@@ -1,0 +1,50 @@
+.introductionSection {
+  padding: 40px 20px;
+  background-color: #fafafa;
+}
+
+/* Hero Banner */
+.heroBanner {
+  background: linear-gradient(135deg, #e6f7ff, #ffffff);
+  border-radius: 16px;
+  padding: 50px 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.heroTitle {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.heroText {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.heroIcon {
+  font-size: 120px;
+  color: #1890ff;
+}
+
+/* Cards */
+.introCard {
+  margin-top: 24px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.introList {
+  list-style: none;
+  padding: 0;
+}
+
+.introList li {
+  margin: 10px 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

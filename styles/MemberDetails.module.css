@@ -1,0 +1,53 @@
+.memberDetailsPage {
+  padding: 40px 20px;
+  /* background-color: #f9f9f9; */
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Centered Card */
+.memberCard {
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  border-radius: 12px;
+  padding: 24px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.memberCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Avatar */
+.avatar {
+  background-color: #1890ff !important;
+  margin-bottom: 20px;
+  border: 3px solid #e6f7ff;
+}
+
+/* Name Title */
+.memberCard h2 {
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Paragraph text */
+.memberCard p {
+  font-size: 16px;
+  margin: 6px 0;
+  color: #555;
+}
+
+/* Button */
+.backButton {
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 6px 20px;
+}
