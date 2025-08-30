@@ -25,7 +25,8 @@ export default function Home() {
         {/*  Header Section */}
         <HeaderBanner />
 
-        {/*  Main Content */}
+        {/*  Main Content
+         */}
         <Content style={{ padding: "20px" }}>
           <AboutUs />
           <QuickLinks />

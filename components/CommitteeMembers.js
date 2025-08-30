@@ -1,13 +1,13 @@
 import React from "react";
 import { Card, Row, Col, Typography, Button, Avatar } from "antd";
 import { UserOutlined, WomanOutlined, TeamOutlined } from "@ant-design/icons";
-import { useRouter } from "next/router";   // ✅ import router
+import { useRouter } from "next/router";   
 import styles from "../styles/CommitteeMembers.module.css";
 
 const { Title, Text } = Typography;
 
 const CommitteeMembers = () => {
-  const router = useRouter();  // ✅ create router
+  const router = useRouter();  
 
   return (
     <div className={styles.membersSection}>

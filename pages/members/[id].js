@@ -2,7 +2,7 @@
 import { useRouter } from "next/router";
 import { Typography, Card, Button, Avatar } from "antd";
 import { ArrowLeftOutlined, UserOutlined } from "@ant-design/icons";
-import styles from "../../styles/MemberDetails.module.css";  // ✅ custom CSS
+import styles from "../../styles/MemberDetails.module.css";  
 
 const { Title, Paragraph } = Typography;
 

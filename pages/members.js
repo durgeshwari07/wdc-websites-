@@ -81,7 +81,7 @@ export default function Members() {
       {/* Back Button */}
       <div style={{ textAlign: "center", marginTop: "20px" }}>
         <Button 
-          icon={<ArrowLeftOutlined />} 
+          // icon={<ArrowLeftOutlined />} 
           onClick={() => router.push("/committee-members")}
         >
           Back to Committee Members
@@ -90,7 +90,7 @@ export default function Members() {
     type="default"
     onClick={() => router.push("/")}
   >
-    ← Back to Home
+     Back to Home
   </Button>
       </div>
     </div>
