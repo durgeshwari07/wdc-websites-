@@ -4,11 +4,12 @@ import { Layout } from "antd";
 
 import HeaderBanner from "../components/HeaderBanner";
 import AboutUs from "../components/AboutUs";
-import QuickLinks from "../components/QuickLinks";
+import QuickLinks from "../components/QuickLinks/QuickLinks";
 import DevelopmentSectors from "../components/DevelopmentSectors";
 import CommitteeMembers from "../components/CommitteeMembers";
 import CitizenParticipation from "../components/CitizenParticipation";
 import FooterSection from "../components/FooterSection";
+import Constitution from '../components/QuickLinks/constitution';
 
 
 const { Content } = Layout;
