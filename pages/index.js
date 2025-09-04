@@ -9,8 +9,6 @@ import DevelopmentSectors from "../components/DevelopmentSectors";
 import CommitteeMembers from "../components/CommitteeMembers";
 import CitizenParticipation from "../components/CitizenParticipation";
 import FooterSection from "../components/FooterSection";
-import Constitution from '../components/QuickLinks/constitution';
-
 
 const { Content } = Layout;
 
