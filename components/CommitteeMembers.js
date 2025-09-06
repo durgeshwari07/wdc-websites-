@@ -1,13 +1,46 @@
-import React from "react";
-import { Card, Row, Col, Typography, Button, Avatar } from "antd";
+import React, { useState } from "react";
+import { Card, Row, Col, Typography, Button, Avatar, Modal } from "antd";
 import { UserOutlined, WomanOutlined, TeamOutlined } from "@ant-design/icons";
-import { useRouter } from "next/router";   // ✅ import router
+import { useRouter } from "next/router";
 import styles from "../styles/CommitteeMembers.module.css";
 
-const { Title, Text } = Typography;
+const { Title, Text, Paragraph } = Typography;
 
 const CommitteeMembers = () => {
-  const router = useRouter();  // ✅ create router
+  const router = useRouter();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedMember, setSelectedMember] = useState(null);
+
+  // ✅ Information for members
+  const membersInfo = {
+    chairperson: {
+      title: "Chairperson",
+      name: "Rajesh Kumar",
+      phone: "9876543210",
+      details:
+        "Rajesh Kumar leads the Ward Development Committee, ensuring transparency, decision-making, and smooth coordination between all representatives.",
+    },
+    convenor: {
+      title: "Convenor",
+      name: "Sita Devi",
+      phone: "9876501234",
+      details:
+        "Sita Devi acts as the Convenor, managing meetings, keeping records, and helping bridge communication between citizens and the committee.",
+    },
+    other: {
+      title: "Other Members",
+      details: `
+        • Women Representative – works to empower women in the community.  
+        • SC/ST Representative – represents marginalized groups for inclusion.  
+        • OBC Representative – ensures fair opportunities for OBC communities.  
+      `,
+    },
+  };
+
+  const showMemberInfo = (key) => {
+    setSelectedMember(membersInfo[key]);
+    setIsModalOpen(true);
+  };
 
   return (
     <div className={styles.membersSection}>
@@ -18,7 +51,12 @@ const CommitteeMembers = () => {
       <Row gutter={[24, 24]} justify="center">
         {/* Chairperson */}
         <Col xs={24} sm={12} md={8}>
-          <Card className={styles.memberCard} bordered hoverable>
+          <Card
+            className={styles.memberCard}
+            bordered
+            hoverable
+            onClick={() => showMemberInfo("chairperson")}
+          >
             <Avatar size={100} icon={<UserOutlined />} className={styles.avatar} />
             <Title level={4}>Chairperson</Title>
             <Text strong>Name: Rajesh Kumar</Text>
@@ -29,7 +67,12 @@ const CommitteeMembers = () => {
 
         {/* Convenor */}
         <Col xs={24} sm={12} md={8}>
-          <Card className={styles.memberCard} bordered hoverable>
+          <Card
+            className={styles.memberCard}
+            bordered
+            hoverable
+            onClick={() => showMemberInfo("convenor")}
+          >
             <Avatar size={100} icon={<TeamOutlined />} className={styles.avatar} />
             <Title level={4}>Convenor</Title>
             <Text strong>Name: Sita Devi</Text>
@@ -40,7 +83,12 @@ const CommitteeMembers = () => {
 
         {/* Other Members */}
         <Col xs={24} md={8}>
-          <Card className={styles.memberCard} bordered hoverable>
+          <Card
+            className={styles.memberCard}
+            bordered
+            hoverable
+            onClick={() => showMemberInfo("other")}
+          >
             <Title level={4}>Other Members</Title>
             <p>
               <WomanOutlined style={{ color: "hotpink" }} /> Women Representative
@@ -55,24 +103,36 @@ const CommitteeMembers = () => {
         </Col>
       </Row>
 
-      {/* ✅ Button now navigates to /members */}
+      {/* Button for Full List */}
       <div style={{ textAlign: "center", marginTop: "30px" }}>
-        {/* <Button 
-    type="default" 
-    size="large"
-    onClick={() => router.push("/")}
-    style={{ marginRight: "10px" }}
-  >
-    ← Back to Home
-  </Button> */}
-        <Button 
-          type="primary" 
+        <Button
+          type="primary"
           size="large"
-          onClick={() => router.push("/members")}  
+          onClick={() => router.push("/members")}
         >
           Full Member List →
         </Button>
       </div>
+
+      {/* Modal for details */}
+      <Modal
+        title={selectedMember?.title}
+        open={isModalOpen}
+        footer={null}
+        onCancel={() => setIsModalOpen(false)}
+      >
+        {selectedMember?.name && (
+          <Paragraph>
+            <strong>Name:</strong> {selectedMember.name}
+          </Paragraph>
+        )}
+        {selectedMember?.phone && (
+          <Paragraph>
+            <strong>Phone:</strong> {selectedMember.phone}
+          </Paragraph>
+        )}
+        <Paragraph>{selectedMember?.details}</Paragraph>
+      </Modal>
     </div>
   );
 };

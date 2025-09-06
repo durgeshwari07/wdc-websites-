@@ -1,21 +1,59 @@
 .membersSection {
   padding: 60px 20px;
-  background: #f9fbfd;
+  background-color: #f9fbfd; /* soft background */
 }
 
+/* Member Card Styles */
 .memberCard {
   text-align: center;
   padding: 20px;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
+  border-radius: 14px !important;
+  transition: all 0.3s ease;
+  background: #fff;
+  cursor: pointer;
+  border: 1px solid #f0f0f0;
 }
 
 .memberCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
 }
 
+/* Avatar Styling */
 .avatar {
   margin-bottom: 15px;
   background-color: #1677ff;
+  border: 2px solid #e6f4ff;
+}
+
+/* Text inside cards */
+.memberCard h4 {
+  margin-top: 10px;
+  color: #333;
+}
+
+.memberCard p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #555;
+}
+
+/* ✅ Fix: Scope global modal styles under .membersSection */
+.membersSection :global(.ant-modal-content) {
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.membersSection :global(.ant-modal-header) {
+  border-radius: 12px 12px 0 0;
+  background: #1677ff;
+}
+
+.membersSection :global(.ant-modal-title) {
+  color: #fff;
+  font-weight: 600;
+}
+
+.membersSection :global(.ant-modal-close-x) {
+  color: #fff;
 }
