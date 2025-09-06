@@ -1,16 +1,21 @@
 .footer {
-  background: #001529; /* Ant Design dark footer */
+  background: #020422; /* Ant Design dark footer */
   color: #fff;
   padding: 40px 20px;
 }
 
 .footerTitle {
-  color: #fff !important;
+  color: #ffffff !important;
+  margin-bottom: 12px;
+}
+
+.footerText{
+  color: #ffffff !important;
   margin-bottom: 12px;
 }
 
 .footer a {
-  color: #40a9ff;
+  color: #7aa7cc;
   text-decoration: none;
 }
 
@@ -21,8 +26,8 @@
 .footerBottom {
   margin-top: 30px;
   text-align: center;
-  border-top: 1px solid #333;
+  border-top: 1px solid #ffffff;
   padding-top: 15px;
   font-size: 14px;
-  color: #aaa;
+  color: #ffffff;
 }

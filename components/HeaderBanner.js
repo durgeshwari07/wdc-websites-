@@ -2,6 +2,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { Button, Space, Typography, Image } from 'antd';
 import { ArrowRightOutlined } from '@ant-design/icons';
 import styles from '../styles/HeaderBanner.module.css';

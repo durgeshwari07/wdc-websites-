@@ -63,7 +63,7 @@ export default function ConstitutionPage() {
 
         {/* Page Content */}
         <Content style={{ padding: "20px" }}>
-          <h1>Constitution Information</h1>
+          <h1>Development Sectors</h1>
           <HorizontalInfoSection />
         </Content>
 
