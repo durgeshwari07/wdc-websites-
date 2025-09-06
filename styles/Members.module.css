@@ -1,0 +1,72 @@
+.membersPage {
+  padding: 40px 20px;
+  background-color: #fafafa;
+  min-height: 100vh;
+}
+
+/* Title styling */
+.membersPage h2 {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Filters layout */
+.filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Makes responsive on small screens */
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+/* Ant Design Table tweaks */
+.ant-table {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table header */
+.ant-table-thead > tr > th {
+  background: #1890ff !important;
+  color: #fff !important;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Table body cells */
+.ant-table-tbody > tr > td {
+  text-align: center;
+  font-size: 15px;
+}
+
+/* 🔹 Striped rows */
+.ant-table-tbody > tr:nth-child(odd) > td {
+  background-color: #fafafa;
+}
+
+/* 🔹 Hover effect */
+.ant-table-tbody > tr:hover > td {
+  background-color: #e6f7ff !important;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Button section */
+.membersPage button {
+  border-radius: 8px;
+  padding: 6px 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .membersPage {
+    padding: 20px 10px;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

@@ -1,11 +1,14 @@
 import React from "react";
-import { Card, Row, Col, Typography, Button, Avatar, Tag } from "antd";
+import { Card, Row, Col, Typography, Button, Avatar } from "antd";
 import { UserOutlined, WomanOutlined, TeamOutlined } from "@ant-design/icons";
+import { useRouter } from "next/router";   // ✅ import router
 import styles from "../styles/CommitteeMembers.module.css";
 
 const { Title, Text } = Typography;
 
 const CommitteeMembers = () => {
+  const router = useRouter();  // ✅ create router
+
   return (
     <div className={styles.membersSection}>
       <Title level={2} style={{ textAlign: "center", marginBottom: "30px" }}>
@@ -52,8 +55,21 @@ const CommitteeMembers = () => {
         </Col>
       </Row>
 
+      {/* ✅ Button now navigates to /members */}
       <div style={{ textAlign: "center", marginTop: "30px" }}>
-        <Button type="primary" size="large">
+        {/* <Button 
+    type="default" 
+    size="large"
+    onClick={() => router.push("/")}
+    style={{ marginRight: "10px" }}
+  >
+    ← Back to Home
+  </Button> */}
+        <Button 
+          type="primary" 
+          size="large"
+          onClick={() => router.push("/members")}  
+        >
           Full Member List →
         </Button>
       </div>

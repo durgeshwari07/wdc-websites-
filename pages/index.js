@@ -10,6 +10,7 @@ import CommitteeMembers from "../components/CommitteeMembers";
 import CitizenParticipation from "../components/CitizenParticipation";
 import FooterSection from "../components/FooterSection";
 
+
 const { Content } = Layout;
 
 export default function Home() {

@@ -1,28 +1,36 @@
 .footer {
-  background: #001529; /* Ant Design dark footer */
-  color: #fff;
-  padding: 40px 20px;
+  background: linear-gradient(135deg, #243949, #517fa4); 
+  color: #f5f5f5;
+  padding: 50px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .footerTitle {
-  color: #fff !important;
-  margin-bottom: 12px;
+  color: #ffffff;
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .footer a {
-  color: #40a9ff;
+  color: #ffd369; 
   text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .footer a:hover {
+  color: #ff9f1c; 
   text-decoration: underline;
+  transform: translateY(-2px); 
 }
 
 .footerBottom {
-  margin-top: 30px;
+  margin-top: 40px;
   text-align: center;
-  border-top: 1px solid #333;
-  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 20px;
   font-size: 14px;
-  color: #aaa;
+  color: #ddd;
+  letter-spacing: 0.3px;
 }
