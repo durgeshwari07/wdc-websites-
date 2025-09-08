@@ -1,0 +1,91 @@
+/* --- Page Layout & Sidebar --- */
+.topBar {
+  padding: 15px 40px;
+  background-color: #f0f2f5;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.pageLayout {
+  min-height: calc(100vh - 51px);
+  background: #fff;
+}
+
+.sider {
+  background: #f7f8fa;
+  border-right: 1px solid #e8e8e8;
+  padding-top: 20px;
+}
+
+.siderHeader {
+  padding: 0 24px 20px 24px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.siderTitle {
+  font-size: 18px !important;
+  margin-bottom: 0 !important;
+}
+
+/* --- Main Content --- */
+.content {
+  padding: 30px 40px;
+}
+
+.contentHeader {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 20px;
+}
+
+.mainTitle {
+  margin-bottom: 0 !important;
+  font-weight: 600 !important;
+}
+
+/* --- Informational Card Styles --- */
+.infoCard {
+  background: #fff;
+  padding: 24px;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.infoCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.cardIcon {
+  font-size: 40px;
+  color: #1890ff; /* Ant Design primary blue */
+  margin-bottom: 16px;
+}
+
+.cardTitle {
+  font-size: 18px !important;
+  margin-bottom: 8px !important;
+}
+
+
+.cardDescription {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #555;
+  white-space: pre-line; /* preserves line breaks from template literal */
+  margin-top: 10px;
+  text-align: left; /* ensures text starts from left */
+}
+
+/* Optional: style bullet points */
+.cardDescription ul {
+  margin-left: 20px;
+  list-style-type: disc;
+  text-align: left; /* ensures bullets align left */
+}
+
+.cardDescription li {
+  margin-bottom: 5px;
+}

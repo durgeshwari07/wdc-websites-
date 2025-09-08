@@ -1,0 +1,29 @@
+.pageContainer {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pageTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1890ff;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.pageParagraph {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  text-align: justify;
+}
+
+.backButton {
+  display: flex;
+  justify-content: center;
+}

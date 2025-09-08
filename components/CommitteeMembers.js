@@ -8,10 +8,12 @@ const { Title, Text, Paragraph } = Typography;
 
 const CommitteeMembers = () => {
   const router = useRouter();
+
+  // ✅ State for Modal
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedMember, setSelectedMember] = useState(null);
 
-  // ✅ Information for members
+  // ✅ Member Info
   const membersInfo = {
     chairperson: {
       title: "Chairperson",
@@ -114,7 +116,7 @@ const CommitteeMembers = () => {
         </Button>
       </div>
 
-      {/* Modal for details */}
+      {/* Modal for Member Info */}
       <Modal
         title={selectedMember?.title}
         open={isModalOpen}
@@ -131,7 +133,9 @@ const CommitteeMembers = () => {
             <strong>Phone:</strong> {selectedMember.phone}
           </Paragraph>
         )}
-        <Paragraph>{selectedMember?.details}</Paragraph>
+        <Paragraph style={{ whiteSpace: "pre-line" }}>
+          {selectedMember?.details}
+        </Paragraph>
       </Modal>
     </div>
   );
