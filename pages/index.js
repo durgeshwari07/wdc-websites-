@@ -3,13 +3,13 @@ import Head from "next/head";
 import { Layout } from "antd";
 
 import HeaderBanner from "../components/HeaderBanner";
-import AboutUs from "../components/aboutUs";
+import aboutUs from "../components/aboutUs";
 import QuickLinks from "../components/QuickLinks/QuickLinks";
 import DevelopmentSectors from "../components/DevelopmentSectors";
 import CommitteeMembers from "../components/CommitteeMembers";
 import CitizenParticipation from "../components/CitizenParticipation";
 import FooterSection from "../components/FooterSection";
-
+import AboutUs from "@/components/aboutUs";
 
 const { Content } = Layout;
 
@@ -20,31 +20,21 @@ export default function Home() {
         <title>Ward Development Committee</title>
       </Head>
 
-<<<<<<< HEAD
+      {/* Page Layout */}
       <Layout>
-        <HeaderBanner />
-=======
-      {/*  Page Layout */}
-      <Layout>
-        {/*  Header Section */}
+        {/* Header Section */}
         <HeaderBanner />
 
-        {/*  Main Content
-         */}
->>>>>>> save-work
+        {/* Main Content */}
         <Content style={{ padding: "20px" }}>
-          <AboutUs />
+          <aboutUs />
           <QuickLinks />
           <DevelopmentSectors />
           <CommitteeMembers />
           <CitizenParticipation />
-<<<<<<< HEAD
         </Content>
-=======
-          </Content>
 
-        
->>>>>>> save-work
+        {/* Footer Section */}
         <FooterSection />
       </Layout>
     </>
