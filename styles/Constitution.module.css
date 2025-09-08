@@ -1,91 +1,78 @@
-/* --- Page Layout & Sidebar --- */
-.topBar {
-  padding: 15px 40px;
-  background-color: #f0f2f5;
-  border-bottom: 1px solid #e8e8e8;
+ .section {
+  background-color: #f9fafb;
+  padding: 5rem 1rem;
+  font-family: system-ui, sans-serif;
 }
 
-.pageLayout {
-  min-height: calc(100vh - 51px);
-  background: #fff;
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.sider {
-  background: #f7f8fa;
-  border-right: 1px solid #e8e8e8;
-  padding-top: 20px;
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
 }
 
-.siderHeader {
-  padding: 0 24px 20px 24px;
-  border-bottom: 1px solid #f0f0f0;
+/* This is the main container for a single horizontal item */
+.card {
+  display: flex;
+  align-items: flex-start; 
+  gap: 1.5rem; 
 }
 
-.siderTitle {
-  font-size: 18px !important;
-  margin-bottom: 0 !important;
+.cardNumber {
+  font-size: 5rem; 
+  font-weight: 800;
+  line-height: 1;
+  color: #c3c7ce; 
+  user-select: none;
 }
 
-/* --- Main Content --- */
-.content {
-  padding: 30px 40px;
-}
-
-.contentHeader {
-  margin-bottom: 30px;
-  border-bottom: 1px solid #f0f0f0;
-  padding-bottom: 20px;
-}
-
-.mainTitle {
-  margin-bottom: 0 !important;
-  font-weight: 600 !important;
-}
-
-/* --- Informational Card Styles --- */
-.infoCard {
-  background: #fff;
-  padding: 24px;
-  border: 1px solid #e8e8e8;
-  border-radius: 8px;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.infoCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.cardIcon {
-  font-size: 40px;
-  color: #1890ff; /* Ant Design primary blue */
-  margin-bottom: 16px;
+.cardContent {
+  padding-top: 0.5rem; 
 }
 
 .cardTitle {
-  font-size: 18px !important;
-  margin-bottom: 8px !important;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
 }
 
+.underline {
+  width: 4rem;
+  height: 3px;
+  background-color: #22c55e;
+  margin: 1rem 0;
+}
 
 .cardDescription {
-  font-size: 14px;
-  line-height: 1.8;
-  color: #555;
-  white-space: pre-line; /* preserves line breaks from template literal */
-  margin-top: 10px;
-  text-align: left; /* ensures text starts from left */
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
 }
 
-/* Optional: style bullet points */
-.cardDescription ul {
-  margin-left: 20px;
-  list-style-type: disc;
-  text-align: left; /* ensures bullets align left */
+.readMoreLink {
+  color: #16a34a;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.cardDescription li {
-  margin-bottom: 5px;
+.readMoreLink:hover {
+  color: #15803d;
 }
+
+.readMoreLink span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.readMoreLink:hover span {
+  transform: translateX(5px);
+} 
+
+

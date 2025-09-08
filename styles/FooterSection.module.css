@@ -1,5 +1,5 @@
 .footer {
-  background: linear-gradient(135deg, #ccdeeb, #8fa7bc); 
+  background: linear-gradient(135deg, #ccdeeb, #8fa7bc); /* Soft gradient */
   color: #f5f5f5;
   padding: 50px 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -11,6 +11,12 @@
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.5px;
+}
+
+.footerText {
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-size: 15px;
 }
 
 .footer a {
@@ -31,6 +37,6 @@
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: 20px;
   font-size: 14px;
-  color: #000000;
+  color: #ffffff;
   letter-spacing: 0.3px;
 }
