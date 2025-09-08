@@ -50,7 +50,7 @@ const QuickLinks = () => {
       <Row gutter={[32, 32]} justify="center">
         {quickLinksData.map((item, index) => (
           <Col key={index} xs={24} sm={12} md={6}>
-            {/* ✅ Wrap entire card inside Link */}
+            {/*  Wrap entire card inside Link */}
             <Link href={item.href} className={styles.cardWrapper}>
               <div className={styles.cardContent}>
                 <span className={styles.icon}>{item.icon}</span>
