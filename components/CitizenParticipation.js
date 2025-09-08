@@ -1,10 +1,13 @@
 import React from "react";
 import { Row, Col, Typography, Button, Card } from "antd";
+import { useRouter } from "next/router";
 import styles from "../styles/CitizenParticipation.module.css";
 
 const { Title, Paragraph } = Typography;
 
 const CitizenParticipation = () => {
+  const router = useRouter();
+
   return (
     <div className={styles.sectionWrapper}>
       <Card bordered={false} className={styles.card}>
@@ -28,7 +31,7 @@ const CitizenParticipation = () => {
               size="large"
               shape="round"
               className={styles.ctaButton}
-              onClick={() => alert("Thank you for showing interest!")}
+              onClick={() => router.push("/get-involved")}
             >
               Get Involved
             </Button>

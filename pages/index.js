@@ -3,7 +3,7 @@ import Head from "next/head";
 import { Layout } from "antd";
 
 import HeaderBanner from "../components/HeaderBanner";
-import AboutUs from "../components/AboutUs";
+import AboutUs from "../components/aboutUs";
 import QuickLinks from "../components/QuickLinks/QuickLinks";
 import DevelopmentSectors from "../components/DevelopmentSectors";
 import CommitteeMembers from "../components/CommitteeMembers";
