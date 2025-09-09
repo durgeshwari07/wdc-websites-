@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { Typography, Card, Button, Avatar } from "antd";
 import { ArrowLeftOutlined, UserOutlined } from "@ant-design/icons";
-import styles from "../../styles/MemberDetails.module.css";  // ✅ custom CSS
+import styles from "../../styles/MemberDetails.module.css";  
 
 const { Title, Paragraph } = Typography;
 
@@ -9,7 +9,7 @@ export default function MemberDetails() {
   const router = useRouter();
   const { id } = router.query;
 
-  // ✅ Members Data
+  // Members Data
   const membersData = {
     1: { name: "Rajesh Kumar", role: "Chairperson", contact: "9876543210", avatar: "" },
     2: { name: "Sita Devi", role: "Convenor", contact: "9876501234", avatar: "" },
@@ -20,7 +20,7 @@ export default function MemberDetails() {
 
   const member = membersData[id];
 
-  // ✅ Handle invalid or loading state
+  //  Handle invalid or loading state
   if (!member) return <p>Loading...</p>;
 
   return (

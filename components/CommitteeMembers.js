@@ -9,11 +9,11 @@ const { Title, Text, Paragraph } = Typography;
 const CommitteeMembers = () => {
   const router = useRouter();
 
-  // ✅ State for Modal
+  // State for Modal
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedMember, setSelectedMember] = useState(null);
 
-  // ✅ Member Info
+  //  Member Info
   const membersInfo = {
     chairperson: {
       title: "Chairperson",

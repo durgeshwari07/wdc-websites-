@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography, Form, Input, Button, Checkbox, Card, message } from "antd";
 import { MailOutlined, UserOutlined } from "@ant-design/icons";
+import Link from "next/link"; 
 
 const { Title, Paragraph } = Typography;
 
@@ -89,7 +90,9 @@ const GetInvolved = () => {
               <Form.Item
                 name="otherContribution"
                 label="Please specify your other contribution"
-                rules={[{ required: true, message: "Please specify your contribution!" }]}
+                rules={[
+                  { required: true, message: "Please specify your contribution!" },
+                ]}
               >
                 <Input.TextArea rows={4} placeholder="Type your contribution here..." />
               </Form.Item>
@@ -103,9 +106,19 @@ const GetInvolved = () => {
             Submit
           </Button>
         </Form.Item>
+
+        {/*  Back to Home Button */}
+        <Form.Item>
+          <Link href="/">
+            <Button type="default" size="large" block>
+              Back to Home
+            </Button>
+          </Link>
+        </Form.Item>
       </Form>
     </Card>
   );
 };
 
 export default GetInvolved;
+
