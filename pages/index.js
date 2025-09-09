@@ -26,7 +26,7 @@ export default function Home() {
 
         {/* Main Content */}
         <Content style={{ padding: "20px" }}>
-          <AboutUs /> {/* ✅ Fixed capitalization */}
+          <AboutUs /> 
           <QuickLinks />
           <DevelopmentSectors />
           <CommitteeMembers />

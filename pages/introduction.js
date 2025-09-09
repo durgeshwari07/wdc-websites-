@@ -24,9 +24,9 @@ export default function Introduction() {
             <Button
               type="default"
               icon={<ArrowLeftOutlined />}
-              onClick={() => router.push("/about")}
+              onClick={() => router.push("/")}
             >
-              Back to About
+              Back to Home
             </Button>
           </Col>
           <Col xs={24} md={12} style={{ textAlign: "center" }}>

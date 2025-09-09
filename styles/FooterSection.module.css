@@ -1,5 +1,8 @@
 .footer {
-  background: linear-gradient(135deg, #ccdeeb, #8fa7bc); /* Soft gradient */
+  background: linear-gradient(135deg, #aaa9a9, #ffffff);
+color: #ffffff;
+
+
   color: #f5f5f5;
   padding: 50px 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

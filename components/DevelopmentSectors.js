@@ -18,14 +18,14 @@ import styles from '../styles/DevelopmentSectors.module.css';
 
 const sectors = [
   { title: 'Agriculture & Allied', icon: <CloudOutlined />, href: '/sectors/agriculture' },
-  { title: 'Local Economy & Industries', icon: <BankOutlined />, href: '/sectors/economy' },
-  { title: 'Health & Sanitation', icon: <MedicineBoxOutlined />, href: '/sectors/health' },
-  { title: 'Education', icon: <BookOutlined />, href: '/sectors/education' },
-  { title: 'Women & Child Development', icon: <TeamOutlined />, href: '/sectors/women-child' },
-  { title: 'Infrastructure & Public Works', icon: <BuildOutlined />, href: '/sectors/infrastructure' },
-  { title: 'Arts, Culture & Sports', icon: <HighlightOutlined />, href: '/sectors/arts-culture-sports' },
+  { title: 'Local Economy & Industries', icon: <BankOutlined />, href: '/sectors/LocalEconomyIndustries' },
+  { title: 'Health & Sanitation', icon: <MedicineBoxOutlined />, href: '/sectors/HealthSanitation' },
+  { title: 'Education', icon: <BookOutlined />, href: '/sectors/Education' },
+  { title: 'Women & Child Development', icon: <TeamOutlined />, href: '/sectors/womenChild' },
+  { title: 'Infrastructure & Public Works', icon: <BuildOutlined />, href: '/sectors/infrastructurePW' },
+  { title: 'Arts, Culture & Sports', icon: <HighlightOutlined />, href: '/sectors/artsCultureSports' },
   { title: 'Tourism & River Navigation', icon: <FundOutlined />, href: '/sectors/tourism' },
-  { title: 'Disaster Management', icon: <SafetyCertificateOutlined />, href: '/sectors/disaster-management' },
+  { title: 'Disaster Management', icon: <SafetyCertificateOutlined />, href: '/sectors/disasterManagement' },
 ];
 
 export default function DevelopmentSectors() {
